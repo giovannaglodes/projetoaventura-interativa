@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma aventura interativa em que suas escolhas mudam o caminho da história.">
+  <title>O Segredo da Floresta | Aventura Interativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="O Segredo da Floresta - início">
+      <span class="brand-icon" aria-hidden="true">✦</span>
+      <span>contos<span class="brand-highlight">&amp;</span> escolhas</span>
+    </a>
+    <span class="chapter-label">UMA AVENTURA INTERATIVA</span>
+  </header>
+
+  <main id="inicio" class="page-shell">
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SUA HISTÓRIA COMEÇA AQUI</p>
+        <h1 id="main-title">O Segredo<br>da <span>Floresta</span></h1>
+        <p class="hero-description">Uma trilha misteriosa. Um mapa antigo. E decisões que só você pode tomar. Entre nessa aventura e descubra onde suas escolhas vão te levar.</p>
+        <button id="start-button" class="primary-button" type="button">Começar aventura <span aria-hidden="true">→</span></button>
+        <p class="small-note">♡ Não existe caminho certo. A história é sua.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração de uma floresta misteriosa ao entardecer">
+        <div class="sun"></div><div class="moon"></div>
+        <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="tree tree-one"></div><div class="tree tree-two"></div><div class="tree tree-three"></div>
+        <div class="path"></div>
+        <div class="art-caption"><span>01</span><span>O chamado da floresta</span></div>
+      </div>
+    </section>
+
+    <section id="game" class="game-section" aria-live="polite" hidden>
+      <div class="game-heading">
+        <div><p class="eyebrow">CAPÍTULO <span id="chapter-number">01</span></p><h2 id="scene-title">O mapa encontrado</h2></div>
+        <button id="restart-button" class="text-button" type="button">↺ Recomeçar</button>
+      </div>
+      <div class="progress-track" aria-label="Progresso da aventura"><div id="progress-bar" class="progress-bar"></div></div>
+      <div class="story-card">
+        <div id="scene-art" class="scene-art scene-map" aria-hidden="true"><span>✧</span></div>
+        <div class="story-content">
+          <p id="scene-text" class="story-text"></p>
+          <p id="scene-hint" class="story-hint"></p>
+          <div id="choices" class="choices"></div>
+        </div>
+      </div>
+      <div class="game-footer"><span>✦ O SEGREDO DA FLORESTA</span><span id="step-count">PASSO 1</span></div>
+    </section>
+
+    <section class="how-to" aria-label="Como jogar">
+      <div class="how-item"><span class="how-number">01</span><div><h3>Leia com atenção</h3><p>Cada detalhe pode ser uma pista.</p></div></div>
+      <div class="how-item"><span class="how-number">02</span><div><h3>Faça suas escolhas</h3><p>Toque na opção que preferir.</p></div></div>
+      <div class="how-item"><span class="how-number">03</span><div><h3>Descubra seu final</h3><p>Suas decisões constroem a história.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>Feito para explorar, imaginar e aprender.</span><span>© 2026 · CONTOS &amp; ESCOLHAS</span></footer>
+</body>
+</html>
